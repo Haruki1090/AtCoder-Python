@@ -19,7 +19,7 @@ for i in range(N):
         A[i] = A[i] / 2
         count += 1
     if i == 0:
-        min_count = count
-    elif count < min_count:
-        min_count = count
-print(min_count)
+        max_count = count
+    elif count < max_count:
+        max_count = count
+print(max_count)
