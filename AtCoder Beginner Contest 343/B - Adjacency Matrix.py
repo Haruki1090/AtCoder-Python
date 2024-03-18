@@ -7,8 +7,7 @@
 # ただし、頂点 i と頂点 j が直接結ばれているとは、頂点 i と頂点 j を結ぶ辺が存在することをいいます。
 
 n = int(input())
-a = [list(map(int, input().split())) for _ in range(n)]
+a = [list(map(int, input().split())) for _ in range(n)] # 2次元配列を作成
 for i in range(n):
-    l = [j+1 for j in range(n) if a[i][j] == 1]
-    print(*l)
-# これは、隣接行列の各行を見て、1の位置のインデックスに1を足して出力している。
+    l = [j+1 for j in range(n) if a[i][j] == 1] # 1の位置のインデックスに1を足して出力
+    print(*l) # これは、隣接行列の各行を見て、1の位置のインデックスに1を足して出力している。
