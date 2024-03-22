@@ -36,13 +36,13 @@ A[1] A[2] ... A[N]
 入力例 2 の場合、配列 [-3, 0, 3, -2] を右に1回シフトさせると、[-2, -3, 0, 3] となります。
 """
 
-n, k = map(int, input().split())
-a = list(map(int, input().split()))
+# n, k = map(int, input().split())
+# a = list(map(int, input().split()))
 
-do_shift = k % n # 配列の要素数で割った余りがシフトする回数
+# do_shift = k % n # 配列の要素数で割った余りがシフトする回数
 
-slided_array = a[-do_shift:] + a[:-do_shift]
-print(slided_array)
+# slided_array = a[-do_shift:] + a[:-do_shift]
+# print(slided_array)
 
 # 改善コード
 n, k = map(int, input().split())
