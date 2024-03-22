@@ -46,3 +46,24 @@ while n != 1:
     count += 1
 
 print(count)
+
+
+# 改善コード
+
+n = int(input())
+
+count = 0
+
+while n != 1:
+    if n % 2 == 0:
+        n = n // 2  #整数の割り算の時は//を使う
+    else:
+        # nに1を足した場合と引いた場合のどちらがより効率的か判断
+        # 4の倍数の場合は1を引く方が効率的
+        if (n+1) % 4 == 0 and n != 3:
+            n += 1
+        else:
+            n -= 1
+    count += 1
+
+print(count)
