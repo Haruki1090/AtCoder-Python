@@ -38,7 +38,7 @@ j = 1
 
 for i in range(n_range + 1):
     for j in range(n_range + 1):
-        pre_cpunt = sum(nums[i:j])
+        pre_cpunt = sum(nums[i:j]) # iからjまでの和を求める.この書き方ポイント
         if count < pre_cpunt:
             count = pre_cpunt
 
