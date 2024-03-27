@@ -31,16 +31,16 @@ n_range = int(input())
 nums = list(map(int, input().split()))
 
 count = 0
-pre_cpunt = 0
+pre_count = 0
 
 i = 0
 j = 1
 
 for i in range(n_range + 1):
     for j in range(n_range + 1):
-        pre_cpunt = sum(nums[i:j]) # iからjまでの和を求める.この書き方ポイント
-        if count < pre_cpunt:
-            count = pre_cpunt
+        pre_count = sum(nums[i:j]) # iからjまでの和を求める.この書き方ポイント
+        if count < pre_count:
+            count = pre_count
 
 print(count)
 
